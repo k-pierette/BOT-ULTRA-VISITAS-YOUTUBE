@@ -1,11 +1,33 @@
 # BOT-ULTRA-VISITAS-YOUTUBE
 
-Este código es una herramienta impresionante que utiliza Selenium para automatizar la apertura y actualización de una página web de YouTube. ¿Quieres aumentar el número de vistas en un video de YouTube? ¡Este código es la solución!
+# Actualizador automático de navegadores para YouTube
 
-Lo mejor de todo es que no solo abre una página, sino que utiliza múltiples navegadores para simular el comportamiento humano y mantener la actividad del video en línea. Si deseas ver el video de tu banda favorita una y otra vez, ¡este código lo hace posible!
+Este código en Python utiliza Selenium para abrir múltiples navegadores y actualizar automáticamente una página de YouTube en cada uno de ellos. 
 
-Además, esta herramienta es altamente personalizable, ya que puedes ajustar la cantidad de navegadores utilizados, el tiempo que cada navegador permanece en la página y, si necesitas un poco más de anonimato, puedes incluso agregar un proxy para ocultar tu dirección IP.
+## Configuración
 
-¿Necesitas actualizar la página de YouTube de manera constante para mantener un video en línea? ¡Este código lo hace por ti de manera automatizada! No tienes que preocuparte por cansarte de actualizar manualmente una y otra vez, ¡este código hace todo el trabajo por ti!
+En la sección de configuración, puedes especificar:
 
-En resumen, este código es la solución perfecta para aquellos que buscan aumentar el número de vistas en un video de YouTube de manera automatizada, mientras mantienen una apariencia natural y humana. ¡Es fácil de personalizar, fácil de usar y muy eficaz! ¡Prueba este código hoy y comienza a aumentar tus vistas de manera fácil y rápida!
+- `NUM_NAVEGADORES`: el número de navegadores que deseas abrir.
+- `URL`: la URL de la página de YouTube que deseas actualizar.
+- `TIEMPO_VISTA`: el tiempo que quieres que cada navegador permanezca en la página antes de actualizarla.
+
+## Cómo funciona
+
+Una vez que se han abierto los navegadores, el programa entra en un ciclo infinito que sigue los siguientes pasos:
+
+1. Selecciona un navegador aleatorio de la lista.
+2. Actualiza la página en el navegador seleccionado.
+3. Imprime un mensaje indicando qué navegador se ha actualizado.
+4. Espera un tiempo aleatorio antes de continuar con la próxima actualización.
+
+El programa continúa este ciclo de forma indefinida, actualizando la página de YouTube en diferentes navegadores de forma automática y aleatoria.
+
+## Personalización adicional
+
+Si deseas personalizar aún más el programa, hay algunas opciones adicionales que puedes utilizar:
+
+- Puedes agregar un proxy para cada navegador para evitar ser detectado como un robot. Simplemente descomenta las líneas relevantes en el código.
+- Puedes modificar los valores de `TIEMPO_VISTA` para hacer que cada navegador permanezca más o menos tiempo en la página antes de actualizarla.
+
+¡Diviértete con tu nuevo actualizador automático de navegadores! 
